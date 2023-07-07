@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    background-color: aliceblue;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+.banner--section {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: azure;
+    height: 60%;
+    width: 60%;
+    box-shadow: 0 0 15px -10px;
+}
+.banner--section__h2 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.banner--section__btn {
+    padding: 15px 45px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 15px;
+    box-shadow: 0 0 15px -10px;
+    transition: 0.8s;
+    
+}
+.banner--section__btn:hover {
+background-color: aqua;
+transition: 0.4s;
+}
