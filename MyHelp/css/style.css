@@ -7,6 +7,10 @@ body {
 li {
   list-style-type: none;
 }
+
+a{
+  color: inherit;
+}
 .container {
 max-width: 60%;
 margin: auto;
@@ -70,7 +74,7 @@ padding-top: 2%;
   background-color: #80ff0059;
 }
 .faq--text {
-  /*display: none;*/
+  display: none;
   font-size: 14px;
   color: aliceblue;
   padding: 15px;
