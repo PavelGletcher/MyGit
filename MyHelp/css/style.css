@@ -1,23 +1,25 @@
 body {
   font-family: 'Poppins-Regular', sans-serif;
-  font-size: 18px;
   background-color: rgb(21, 21, 21);
   color: chartreuse;
 }
+
 li {
   list-style-type: none;
 }
 
-a{
+a {
   color: inherit;
 }
+
 .container {
-max-width: 60%;
-margin: auto;
-padding-top: 2%;
+  max-width: 60%;
+  margin: auto;
+  padding-top: 2%;
 }
+
 .nav--spisok {
-  font-size: 25px;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -27,9 +29,11 @@ padding-top: 2%;
 .nav--item {
   transition: 0.8s;
 }
+
 .nav--item::before {
   transition: 0.8s;
 }
+
 .nav--item:hover {
   cursor: pointer;
   transition: 0.4s;
@@ -44,7 +48,9 @@ padding-top: 2%;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
+
 .faq--title {
+  font-size: 20px;
   padding: 15px;
   display: block;
   cursor: pointer;
@@ -65,17 +71,19 @@ padding-top: 2%;
   transform: rotate(180deg);
   transition: 0.4s;
 }
+
 .faq--title:after:hover {
   border-color: transparent transparent #ffffff transparent;
 }
 
 
-.faq--title:hover{
+.faq--title:hover {
   background-color: #80ff0059;
 }
+
 .faq--text {
   display: none;
-  font-size: 14px;
+
   color: aliceblue;
   padding: 15px;
 }
@@ -83,14 +91,16 @@ padding-top: 2%;
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border:1px solid rgba(128, 255, 0, 0.659);
+  border: 1px solid rgba(128, 255, 0, 0.659);
   border-radius: 5px;
   padding: 5px;
 }
+
 .grid--head {
   text-align: center;
   color: #80FF00;
 }
+
 .grid--text {
   text-transform: none;
   padding: 5px;
@@ -104,29 +114,48 @@ padding-top: 2%;
   width: 0;
   height: 0;
 }
-.faq--input:checked ~ .faq--text {
+
+.faq--input:checked~.faq--text {
   display: block;
 }
-.faq--input:checked ~ .faq--title {
+
+.faq--input:checked~.faq--title {
   background-color: #80ff0059;
 }
-.faq--input:checked ~ .faq--title:after {
+
+.faq--input:checked~.faq--title:after {
   transform: rotate(0deg);
 }
+
 table {
+  overflow-x: auto;
   display: block;
   width: 100%;
   margin: auto;
+  border-spacing: 5px;
+  border-radius: 5px;
 }
+
 tbody {
   background-color: #ffffff13;
 }
+
 td {
+  border-radius: 5px;
+  font-size: 14px;
   padding: 5px;
+  padding-left: 15px;
   text-transform: none;
   font-weight: 100;
   letter-spacing: 1.2px;
+  transition: 0.5s;
 }
+
+td:hover {
+  background-color: #80ff0033;
+  cursor: default;
+}
+
 th {
   padding: 5px;
 }

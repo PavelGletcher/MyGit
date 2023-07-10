@@ -1,0 +1,54 @@
+@media (max-width: 740px) {
+  .nav--spisok {
+    gap: 30px;
+    font-size: 24px;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .faq--title {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+
+  th {
+    font-size: 14px;
+  }
+
+
+}
+
+
+
+
+@media (max-width: 520px) {
+  .nav--spisok {
+    gap: 20px;
+    font-size: 18px;
+  }
+
+  td {
+    font-size: 10px;
+  }
+
+  th {
+    font-size: 12px;
+  }
+
+}
+
+
+
+
+@media (max-width: 350px) {
+  .nav--spisok {
+    gap: 10px;
+    font-size: 16px;
+  }
+}
