@@ -1,0 +1,32 @@
+body {
+  font-family: 'Poppins-Regular';
+  font-size: 25px;
+  background-color: rgb(21, 21, 21);
+  color: chartreuse;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav {
+}
+.nav--container {
+  
+}
+.nav--spisok {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 1% 0;
+}
+
+.nav--item {
+  transition: 0.8s;
+}
+.nav--item:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: aqua;
+  transform: scale(1.3);
+}
