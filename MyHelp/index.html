@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/font.css">
-  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/font.css">
+  <link rel="stylesheet" href="/css/reset.css">
   <title>Мои подсказки</title>
 </head>
+
 <body>
   <header class="nav">
     <div class="nav--container">
@@ -23,17 +25,141 @@
   <main class="information--container container">
     <section class="faq">
       <div class="faq--item">
-        <label class="faq--title" for="faq_1">Первый блок</label>
         <input class="faq--input" type="radio" name="faq" id="faq_1">
+        <label class="faq--title" for="faq_1">– GIT</label>
         <div class="faq--text">
-          <p>Ответ на вопрос</p>
+          <table>
+            <tbody>
+              <thead>
+                <tr>
+                  <th>Команда</th>
+                  <th>Описание</th>
+                  <th>Комментарий</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>cd</td>
+                <td>перемещение по директориям</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>ls</td>
+                <td>чек файлов в директории</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>mkdir name</td>
+                <td>создать папку</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>touch name.txt</td>
+                <td>создать файл</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>rm -rf name</td>
+                <td>удалить файл</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>clear</td>
+                <td>очистка терминала</td>
+                <td></td>
+              </tr>
+              
+              <tr>
+                <td>git init</td>
+                <td>создать локальный репозиторий</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>git add ./name</td>
+                <td>добавить файлы в репозиторий</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>git commit -m "Комментарий"</td>
+                <td>коммит файлов</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>git push</td>
+                <td>отправить файлы в GitHub</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>git status</td>
+                <td>узнать в каком состоянии git</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>git log --oneline --graph --decorate --all</td>
+                <td>узнать историю и коммиты</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>git clone url</td>
+                <td>скопировать репозиторий с хаба</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>git pull</td>
+                <td>получение информации с репозитория</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>git branch</td>
+                <td>чекнуть ветки</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>git checkout name</td>
+                <td>перейти в ветку/коммит</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>git branch -d name</td>
+                <td>удалить ветку</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>git remote add origin https://github.com/Pa... .git</td>
+                <td>Подключить репозиторий</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>git push origin name</td>
+                <td>запушить в выбранную ветку хаба</td>
+                <td>также сразу создать на хабе ветку можно</td>
+              </tr>
+
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="faq--item">
-        <label class="faq--title" for="faq_2">Второй блок</label>
         <input class="faq--input" type="radio" name="faq" id="faq_2">
+        <label class="faq--title" for="faq_2">– CSS</label>
         <div class="faq--text">
-          <p>Ответ на вопрос</p>
+          <p>текст</p>
         </div>
       </div>
     </section>
@@ -42,4 +168,5 @@
     <section class="faq--js"></section>
   </main>
 </body>
+
 </html>
