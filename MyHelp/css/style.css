@@ -12,12 +12,6 @@ max-width: 60%;
 margin: auto;
 padding-top: 2%;
 }
-
-.nav {
-}
-.nav--container {
-  
-}
 .nav--spisok {
   font-size: 25px;
   display: flex;
