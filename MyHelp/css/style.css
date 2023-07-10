@@ -1,12 +1,16 @@
 body {
-  font-family: 'Poppins-Regular';
-  font-size: 25px;
+  font-family: 'Poppins-Regular', sans-serif;
+  font-size: 18px;
   background-color: rgb(21, 21, 21);
   color: chartreuse;
 }
-
 li {
   list-style-type: none;
+}
+.container {
+max-width: 60%;
+margin: auto;
+padding-top: 2%;
 }
 
 .nav {
@@ -15,6 +19,7 @@ li {
   
 }
 .nav--spisok {
+  font-size: 25px;
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -24,9 +29,72 @@ li {
 .nav--item {
   transition: 0.8s;
 }
+.nav--item::before {
+  transition: 0.8s;
+}
 .nav--item:hover {
   cursor: pointer;
   transition: 0.4s;
-  color: aqua;
-  transform: scale(1.3);
+  color: rgba(128, 255, 0, 0.659);
+  transform: scale(1.1);
+}
+
+.faq--item {
+  border: 2px solid chartreuse;
+  border-radius: 7px;
+  color: aliceblue;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.faq--title {
+  padding: 15px;
+  display: block;
+  cursor: pointer;
+  transition: background 0.4s ease-out;
+  position: relative;
+}
+
+.faq--title:after {
+  content: '';
+  display: block;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #80FF00 transparent;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(180deg);
+  transition: 0.4s;
+}
+.faq--title:after:hover {
+  border-color: transparent transparent #ffffff transparent;
+}
+
+
+.faq--title:hover{
+  background-color: #80ff0059;
+}
+.faq--text {
+  display: none;
+  font-size: 14px;
+  color: aliceblue;
+  padding: 15px;
+}
+
+.faq--input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.faq--input:checked ~ .faq--text {
+  display: block;
+}
+.faq--input:checked ~ .faq--title {
+  background-color: #80ff0059;
+}
+.faq--input:checked ~ .faq--title:after {
+  transform: rotate(0deg);
 }
